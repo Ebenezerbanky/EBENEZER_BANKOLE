@@ -1,0 +1,162 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katchyway Services</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h1>Katchyway SERVICES</h1>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="product detail.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="/Image/add_shopping_cart_24dp_E8E66_FILL0_wght400_GRAD0_opsz24.png" width="30px" height="30px">
+           <img src="/Image/menu_24dp_E8_FILL0_wght400_GRAD0_opsz24.png" class="menu-icon" onclick="menutoggle()">   
+           </div>
+
+           <!---account-page--->
+           <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="image/devn-V7T7_A0FIIY-unsplash.jpg" width="500">
+                    </div>
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                          <span onclick="Login()">Log in</span> 
+                          <span onclick="Register()">Register</span> 
+                          <hr id="Indicator">
+                        </div>
+
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot password</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="Email" placeholder="Email">
+                            <input type="password" placeholder="password">
+                            <button type="submit" class="btn">Register</button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+           </div>
+    </div>
+
+<!--footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p></p>
+            </div>
+            <div class="footer-col-2">
+                <img src="" alt="">
+                <p></p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Link</h3>
+                <ul>
+                    <li> Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Whatsapp</li>
+                    <li>Instargram</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">copyright 2024- </p>
+    </div>
+</div>
+<!----js for toggle menu----->
+ <script>
+    var MenuItems = document class="getElementByID("MenuItems");
+ 
+    MenuItems.style,maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px") {
+
+        }
+    }
+        MenuItems.style.maxHeight = "200px"
+{
+
+}
+    </script>
+<script>
+    var productImg = document.getElementByID("productImg");
+    var smallimg = document.getElementsByClassName("small-img");
+
+    smallimg[0].oneclick = function(){
+
+        productImge.src = smallImg[0].src;
+    }
+    smallimg[0].oneclick = function(){
+
+productImge.src = smallImg[1].src;
+}
+smallimg[0].oneclick = function(){
+
+productImge.src = smallImg[2].src;
+}
+smallimg[0].oneclick = function(){
+
+productImge.src = smallImg[3].src;
+}
+</script>
+
+<!--js for toggle form-->
+
+<script>
+    var LoginForm = document.getElementByID("LoginForm");
+    var RegForm = document.getElementByID("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function Register(){
+
+        RegForm.style,transform = "translateX(0px)";
+        LoginForm.style,transform = "translateX(0px)";
+    }
+    function Register(){
+
+RegForm.style,transform = "translateX(300px)";
+LoginForm.style,transform = "translateX(300px)";
+}
+</script>
+</body>
+</html>
